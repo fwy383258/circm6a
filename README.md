@@ -29,17 +29,17 @@ cd circm6a/huntcircRNA
 javac -d ./ -classpath ./lib/htsjdk-2.10.1.jar ./src/main/*.java
 jar -cvmf META-INF/MANIFEST.MF circm6a.jar *
 ```
-* The tool is generated as circm6a.jar in this directory.
+The tool is generated as circm6a.jar in this directory.
 
 ## QuickStart
 
 * Start from bam files of IP sample and Input sample
 
 ```
-java -Xmx16g -jar circm6A.jar -ip IP.bam -input Input.bam -o ./example
+java -Xmx16g -jar circm6a.jar -ip IP.bam -input Input.bam -o ./example
 ```
 
-* Running this instruction will result in getting a file named example_circ.bed. `./example` means output_dir/file_prefix
+Running this instruction will result in getting a file named example_circ.bed. `./example` means output_dir/file_prefix
 
 ## Usage
 
@@ -76,7 +76,7 @@ For usage:
 ## Example
 
   ```
-java -Xmx16g -jar circm6A.jar -ip IP.bam -input Input.bam -r Gencode.gtf -g hg38.fa -o output_dir/file_prefix -dev 5 -sup 5
+java -Xmx16g -jar circm6a.jar -ip ../test_data/HeLa_eluate_rep_1.chr22.bam -input ../test_data/HeLa_input_rep_1.chr22.bam -r ../test_data/gencode_chr22.gtf -g ../test_data/hg38_chr22.fa -o ../test_data/test_Hela
   ```
 
 ## OutputHeaders
